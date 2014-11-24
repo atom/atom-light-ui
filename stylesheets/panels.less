@@ -9,21 +9,21 @@
   }
 }
 
-atom-panel {
+atom-panel, .tool-panel {
   .text(normal);
   position: relative;
 
   background-color: @tool-panel-background-color;
 
-  &.bottom {
+  &.bottom, &.panel-bottom {
     border-top: 1px solid @tool-panel-border-color;
   }
 
-  &.left {
+  &.left, &.panel-left {
     border-right: 1px solid @tool-panel-border-color;
   }
 
-  &.right {
+  &.right, &.panel-right {
     border-left: 1px solid @tool-panel-border-color;
   }
 
