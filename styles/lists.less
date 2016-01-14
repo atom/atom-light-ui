@@ -2,11 +2,21 @@
 @import "ui-mixins";
 @import "octicon-mixins";
 
+.list-group {
+   li:not(.list-nested-item),
+   li.list-nested-item > .list-item {
+     .text(normal);
+   }
+ }
+
+.list-tree {
+   li:not(.list-nested-item),
+   li.list-nested-item > .list-item {
+     .text(light);
+   }
+ }
+
 .list-group, .list-tree {
-  li:not(.list-nested-item),
-  li.list-nested-item > .list-item {
-    .text(light);
-  }
 
   .generate-list-item-text-color(@class) {
     li:not(.list-nested-item).text-@{class},
