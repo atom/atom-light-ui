@@ -2,11 +2,21 @@
 @import "ui-mixins";
 @import "octicon-mixins";
 
+.list-group {
+   li:not(.list-nested-item),
+   li.list-nested-item > .list-item {
+     .text(normal);
+   }
+ }
+
+.list-tree {
+   li:not(.list-nested-item),
+   li.list-nested-item > .list-item {
+     .text(light);
+   }
+ }
+
 .list-group, .list-tree {
-  li:not(.list-nested-item),
-  li.list-nested-item > .list-item {
-    .text(normal);
-  }
 
   .generate-list-item-text-color(@class) {
     li:not(.list-nested-item).text-@{class},
@@ -32,7 +42,7 @@
       color: darken(@color, 7%);
     }
   }
-  .generate-list-item-status-color(@text-color-subtle, ignored);
+  .generate-list-item-status-color(fadeout(@text-color-light, 50%), ignored);
   .generate-list-item-status-color(@text-color-added, added);
   .generate-list-item-status-color(@text-color-renamed, renamed);
   .generate-list-item-status-color(@text-color-modified, modified);

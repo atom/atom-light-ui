@@ -1,9 +1,9 @@
-# Atom Light UI theme
+# Atom Arc UI theme
 
-A light UI theme for Atom.
+A theme for Atom based on [Arc](https://github.com/horst3180/Arc-theme) by horst3180.
 
-This theme is installed by default with Atom and can be activated by going to
-the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
-_UI Themes_ drop-down menu.
+## Preview
 
-![](https://f.cloud.github.com/assets/671378/2265022/bb148a20-9e7a-11e3-81c8-bf5965d48183.png)
+![Preview Image](https://raw.githubusercontent.com/thwischm/atom-arc-ui/master/preview.png)
+
+## Work in progress! There's probably bugs all over the place.

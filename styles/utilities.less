@@ -3,6 +3,7 @@
 
 .key-binding {
   background: #fff;
+  color: @text-color-subtle;
   border: 1px solid lighten(@base-border-color, 20%);
   text-shadow: none;
   display: inline-block;
@@ -15,6 +16,10 @@
 }
 
 .badge {
-  .text(highlight);
+  .text(selected);
   background: @background-color-highlight;
+}
+
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar {
+  display: none;
 }

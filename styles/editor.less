@@ -2,30 +2,29 @@
 @import "ui-mixins";
 
 atom-text-editor[mini], atom-text-editor[mini]::shadow {
-  color: lighten(@text-color, 15%);
+  color: @text-color;
   background-color: darken(@input-background-color, 1%);
-  border: 1px solid lighten(@input-border-color, 10%);
+  border: 1px solid @input-border-color;
 
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   border-radius: @component-border-radius;
   padding-left: @component-padding/2;
 
-  .cursor { border-color: #000; }
+  .cursor { border-color: #000; padding: 4px 0;}
   .selection .region { background-color: rgba(0, 0, 0, .2); }
   .placeholder-text {
-    color: lighten(@text-color-subtle, 10%);
+    color: @text-color-subtle;
   }
 }
 
 atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused::shadow {
   color: @text-color;
   background-color: @input-background-color;
-  border-color: @input-border-color;
+  border-color: @selected-border-color;
   .placeholder-text {
     color: @text-color-subtle;
   }
   .selection .region {
-    background-color: lighten(@background-color-info, 30%);
+    background-color: @background-color-selected;
   }
 }
 

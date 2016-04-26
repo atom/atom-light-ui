@@ -1,40 +1,51 @@
 // Colors
 
-@text-color: #444;
-@text-color-subtle: #999;
-@text-color-highlight: #000;
+@text-color: #5D6278;
+@text-color-light: #B9C1CE;
+@text-color-subtle: #A0A4AA;
+@text-color-highlight: #5c616c;
 @text-color-selected: #fff;
 
 @text-color-info: #5293d8;
-@text-color-success: #45A815;
-@text-color-warning: #CD8E00;
-@text-color-error: #c00;
+@text-color-success: #73d216;
+@text-color-warning: #F27835;
+@text-color-error: #FC4138;
 
-@text-color-ignored: @text-color-subtle;
-@text-color-added: @text-color-success;
-@text-color-renamed: @text-color-info;
-@text-color-modified: @text-color-warning;
-@text-color-removed: @text-color-error;
+@text-color-ignored: lighten(@text-color-subtle, 20%);
+@text-color-added: lighten(@text-color-success, 20%);
+@text-color-renamed: lighten(@text-color-info, 20%);
+@text-color-modified: lighten(@text-color-warning, 20%);
+@text-color-removed: lighten(@text-color-error, 20%);
 
 @background-color-info: #0098ff;
-@background-color-success: #17ca65;
-@background-color-warning: #ff4800;
-@background-color-error: #c00;
-@background-color-highlight: rgba(0, 0, 0, .1);
-@background-color-selected: #6aa5e9;
+@background-color-success: #73d216;
+@background-color-warning: #F27835;
+@background-color-error: #FC4138;
+@background-color-highlight: #5294e2;
+@background-color-selected: #5294e2;
 
-@app-background-color: #ccc;
+@app-background-color: #ffffff;
 
-@base-background-color: #f4f4f4;
-@base-border-color: #9f9f9f;
+@base-background-color: #ffffff;
+@base-border-color: #DFDFDF;
 
-@pane-item-background-color: @base-background-color;
+@selected-border-color: #5294E2;
+
+@grey-background-color: #F5F6F7;
+
+@pane-item-background-color: @grey-background-color;
 @pane-item-border-color: @base-border-color;
 
-@input-background-color: white;
-@input-border-color: fadeout(@base-border-color, 10%);
+@button-background-color: @base-background-color;
+@button-background-color-hover: @button-background-color;
+@button-background-color-disabled: #FBFCFC;
+@button-background-color-selected: #D0D6E5;
+@button-border-color: #CFD6E6;
 
-@tool-panel-background-color: @base-background-color;
+@input-background-color: white;
+@input-border-color: @button-border-color;
+
+@tool-panel-background-color: @grey-background-color;
 @tool-panel-border-color: @base-border-color;
 
 @inset-panel-background-color: #fff;
@@ -43,21 +54,16 @@
 @panel-heading-background-color: #c3c3c3;
 @panel-heading-border-color: transparent;
 
-@overlay-background-color: #ececec;
+@overlay-background-color: #f5f6f7;
 @overlay-border-color: @base-border-color;
 
-@button-background-color: @base-background-color;
-@button-background-color-hover: lighten(@button-background-color, 5%);
-@button-background-color-selected: #888;
-@button-border-color: rgba(0, 0, 0, 0.15);
-
-@tab-bar-background-color: #d8d8d8;
-@tab-bar-border-color: #ddd;
-@tab-background-color: #e8e8e8;
+@tab-bar-background-color: #f5f6f7;
+@tab-bar-border-color: @base-border-color;
+@tab-background-color: @base-background-color;
 @tab-background-color-active: #f0f0f0;
-@tab-border-color: lighten(@base-border-color, 10%);
+@tab-border-color: @base-border-color;
 
-@tree-view-background-color: #eee;
+@tree-view-background-color: #373D48;
 @tree-view-border-color: @base-border-color;
 
 @ui-site-color-1: @background-color-success; // green
@@ -69,19 +75,19 @@
 
 // Sizes
 
-@font-size: 11px;
-@input-font-size: 14px;
+@font-size: 13px;
+@input-font-size: 11px;
 @disclosure-arrow-size: 12px;
 
 @component-padding: 10px;
 @component-icon-padding: 5px;
-@component-icon-size: 16px;
-@component-line-height: 25px;
+@component-icon-size: 24px;
+@component-line-height: 32px;
 @component-border-radius: 2px;
 
-@tab-height: 26px;
+@tab-height: 40px;
 
 
 // Other
 
-@font-family: 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: 'Merriweather Sans Light', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
