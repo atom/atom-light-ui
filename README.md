@@ -1,3 +1,7 @@
+### This package is now a part of the [core Atom repository](https://github.com/atom/atom/tree/master/packages/atom-light-ui), please direct all issues and pull requests there in the future!
+
+---
+
 # Atom Light UI theme
 
 A light UI theme for Atom.
